@@ -1,7 +1,7 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
-  --primary-color: #47b2e4;
   --secondary-color: #6c757d;
+  --primary-color: #000;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   --font-family-base: 'Poppins', sans-serif;
@@ -20,7 +20,6 @@ body {
   background-position: center;   /* Centra la imagen */
   background-size: auto;    /* Usa el tamaño real de la imagen */
 }
-
 /* 3. NAVBAR */
 .navbar {
   background-color: transparent;
@@ -74,20 +73,6 @@ p {
   color: #6c757d;
 }
 
-/* Fondo específico solo para el HOME */
-.home {
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
-  background-image: url('Imags/campo\ fondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0 0 5px black;
-}
-
 /* Botones */
 .btn {
   border-radius: 50px;
@@ -98,11 +83,13 @@ p {
 
 .btn-dark {
   background-color: var(--primary-color);
-  border: none;
+   color: var(--primary-color);
 }
 
 .btn-dark:hover {
-  background-color: #369cc5;
+  
+  background-color: #444400;
+  
 }
 
 .btn-outline-dark {
@@ -111,8 +98,8 @@ p {
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--primary-color);
   color: #fff;
+    background-color: #444400;
 }
 
 /* 5. SECCIONES */
@@ -122,12 +109,11 @@ section {
 
 section h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   position: relative;
 }
 
 section h2::after {
-  content: "";
   display: block;
   width: 60px;
   height: 3px;
@@ -194,7 +180,6 @@ form button.btn-primary {
 
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
   color: #ffffff;
   font-size: 0.9rem;
 }
